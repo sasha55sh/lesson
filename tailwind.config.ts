@@ -13,8 +13,33 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      width: {
+        '350': '350px',
+      },
+      height: {
+        '450': '450px',
+      }, 
     },
+    screens: {
+      xs: "375px",
+      mini: "520px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1440px",
+      "2xl": "1920px",
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "15px",
+        sm: "20px",
+        lg: "40px",
+        xl: "120px",
+        "2xl": "160px",
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
 }
 export default config
