@@ -1,4 +1,3 @@
-
 import React, { FC } from "react";
 
 interface userStats {
@@ -25,7 +24,11 @@ const ProfileComponent: FC<userProps> = ({
   return (
     <div className="w-350 h-450 bg-white rounded-lg m-auto my-8 ">
       <div className="text-center">
-        <img  src={avatar} alt={username} className="rounded-full h-22 mt-2.5" ></img>
+        <img
+          src={avatar}
+          alt={username}
+          className="rounded-full h-22 mt-2.5"
+        ></img>
         <p className="font-bold">{username}</p>
         <p className="text-[#bdbec0]">@{tag}</p>
         <p className="text-[#bdbec0]">{location}</p>
