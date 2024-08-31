@@ -1,21 +1,18 @@
 import Image from "next/image";
 import Section from "@/app/sections/Section";
-import ProfileComponent from "@/components/ProfileComponent";
-import user from "@/app/files/user.json";
+import Profile from "@/app/sections/Profile";
+import Statistic from "@/app/sections/Statistic";
 
 export default function Home() {
   return (
-    <div>
-      <ProfileComponent
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-    </div>
     /* <>
+      <Profile />
+    </>
+    <>
       <Section />
     </>*/
+    <>
+      <Statistic />
+    </>
   );
 }
